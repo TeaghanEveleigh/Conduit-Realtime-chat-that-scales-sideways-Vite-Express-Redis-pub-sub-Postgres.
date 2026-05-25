@@ -1,10 +1,12 @@
 // index.js
 import { query } from "#config/neon-connection.js";
+import { requestLogger } from "#middleware/request-logger.js";
 import express from "express";
+
 
 const app = express();
 const port = process.env.PORT ?? "3001";
-
+app.use(requestLogger)
 
 app.get("/promise-chain", (req, res) => {
   query("SELECT * FROM USERS")
@@ -17,7 +19,7 @@ app.get("/promise-chain", (req, res) => {
 });
 app.get("/async", async (req, res) => {
  const users = await query("SELECT * FROM USERS");
- console.log(users)
+ res.json(users)  
 });
 
 app.listen(port, () => {
