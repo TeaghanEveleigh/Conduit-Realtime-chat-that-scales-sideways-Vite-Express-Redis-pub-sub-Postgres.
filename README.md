@@ -25,7 +25,7 @@ A horizontally-scalable realtime messaging app, built to learn production distri
 - **PostgreSQL** — primary data store
 - **Redis** — coordination, caching, pub/sub
 - **Docker** — containerization for local dev and deployment
-- **shadcn/ui** — frontend component library
+- **Material UI** — frontend component library
 
 *ORM, auth, realtime transport, testing tools, hosting, and observability stack still to be decided.*
 

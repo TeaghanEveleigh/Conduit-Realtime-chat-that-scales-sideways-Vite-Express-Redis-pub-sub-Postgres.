@@ -10,6 +10,11 @@ The purpose of this doc is to serve as a space for all the decisions made throug
 
 - **Caching & Pub/Sub**: To be done through Redis
 
+- **Database Migrations**: dbmate used as it is lightweight and helps keep track of migrations easily
+
+
 ## Frontend Decisions
 
-- State management through Redux
+- **Component Library**: Decided to use **Material-UI** as it is well supported and comprehensive.
+
+- **State management**: To be done through Redux

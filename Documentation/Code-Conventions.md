@@ -6,7 +6,8 @@ The purpose of this file is to illustrate all the code conventions and style cho
 
 # Backend Decisions
 
-
+- **Folder Structure**: Feature Based 
+- **API Structure** Using a Feature Based structure where each endpoint is its own confined module, decided to go with this methodology as I feel it is more clean and keeps everything confined where it logically should be
 
 
 
