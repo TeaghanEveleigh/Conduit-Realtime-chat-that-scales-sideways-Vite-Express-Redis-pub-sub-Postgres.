@@ -1,20 +1,7 @@
 import { query } from "#config/db.js";
 import { getSetClauseAndValues } from "#utils/db-operations.js";
+import { CreateUserInput, UpdateUserInput, User } from "./user.types.js";
 
-export type CreateUserInput = Omit<User, "created_at" | "id">;
-
-export type UpdateUserInput = {
-  email?: string;
-  password_hash?: string;
-  username?: string;
-};
-export type User = {
-  created_at: Date;
-  email: string;
-  id: string;
-  password_hash: string;
-  username: string;
-};
 
 export const UserModel = {
   create: (user: CreateUserInput) =>
